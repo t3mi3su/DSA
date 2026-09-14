@@ -77,7 +77,7 @@ def my_range(start, stop, step):
 ## Generators:
 
 ```python
-# Class Example
+# Yield Example
 def f():
 	x = 1
 	yield x
@@ -87,20 +87,20 @@ def f():
 	yield x
 ```
 * g = f()
-  	g
- 	<generator object f at 0x1234567>
-	next(g)
- 	1
-	next(g)
-  	2
+  	* g --> <generator object f at 0x1234567>
+	* next(g) --> 1
+	* next(g) --> 2
+
 * Generator is an iterator, that allows to break the execution:
 * When **yield** is reached, a snapshot/moment of the active data frame is taken and stored (together with the line numer/position of where the execution can resume later).
 	* Yield returns one value at a time and pauses the function.
  	* Using yield, the generator function pauses its execution and keep its state/value between iterations.
 * When **next** is called
-* Generators are lazy evaluation to produce an implicit iterable sequence. This means:
-	* Each element is produced only when/if needed
- 	* The entire sequence is never built and fully stores in the memory 
+* Generators are **lazy evaluation** to produce an implicit iterable sequence. This means:
+	* Each element is produced **only when/if** it is needed
+ 	* The entire sequence is never built and fully stores in the memory
+
+# Asymptotic Analysis
   
 
 
