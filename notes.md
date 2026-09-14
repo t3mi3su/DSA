@@ -4,16 +4,13 @@
 
 ## Iterators
 
-for **var** in **iterable-collection:**
-  ___
-  ___
-  ___
+```python for **var** in **iterable-collection:**```
   
 ### Iterable-collection: 
-  an object that produces an iterator via the syntax: iter(iterable_collection)
+  an object that produces an iterator via the syntax: ```python iter(iterable_collection)```
 
 ### Iterator: 
-  an object that exposes a series of values, by making subsequent calls to: next(iterator)
+  an object that exposes a series of values, by making subsequent calls to: ```python next(iterator)```
 ### List iterator:
   next(lst_iter)
   
@@ -25,10 +22,12 @@ for **var** in **iterable-collection:**
 ```python
 s = "abc"
 for item in s:
-  print(item)
+    print(item)
 s = "abc"
 s_iter = iter(s)
 while ( ):
-s_next = next(s_iter)
+    item = next(s_iter)
+    print(item)
+
 ```
 
