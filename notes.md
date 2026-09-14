@@ -20,14 +20,12 @@
 ## Simulating a **for** loop:
 
 ```python
-# For loop
-
+""" Default """
 s = "abc"
 for item in s:
     print(item)
 
-# Using iterator to simulate a for loop
-
+""" Using Iterator to simulate """
 s = "abc"
 s_iter = iter(s)
 end = False # Boolean to break out of loop
