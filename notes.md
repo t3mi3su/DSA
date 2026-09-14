@@ -101,6 +101,18 @@ def f():
  	* The entire sequence is never built and fully stores in the memory
 
 # Asymptotic Analysis
-  
 
+## Computational Problem
+- definition
+
+## Algorithms
+- definition
+### Analyzing Algorithms
+* **Correctness**: An algorithm is correct if for **every** valid input, it:
+  	* terminates (halts)
+  	* provides the desired output
+* **Performance**: Measure the resources an algorithm requires. Common resources:
+	* time of computation
+ 	* pace (memory use)
+  * disk use, disk-memory communication, number of processors (in a parallel program), amount of communication (in a distributed program) 
 
