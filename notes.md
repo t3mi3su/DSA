@@ -45,7 +45,7 @@ while ( ):
 for elem in range(0, 10, 2):
   print(elem)
 
-# Implementation: Using Iterator
+# Implementation: using Iterator
 for elem in my_range(0, 10, 2):
   print(elem)
 def my_range(start, stop, step): # three argument call
@@ -55,6 +55,15 @@ def my_range(start, stop, step): # three argument call
     res.append(curr)
     curr += step
   return res
+
+# Implementation: using a Generator function
+for elem in my_range(0, 10, 2):
+  print(elem)
+def my_range(start, stop, step):
+	curr = start
+	while (curr < stop):
+	yield curr # instead of executing all values, it executes one value at a time everytime it goes through the for loop (takes less time)
+	curr += step
 ```
 ### Implementation Drawbacks:
 - The implementation is valid but there are problems
@@ -66,7 +75,7 @@ def my_range(start, stop, step): # three argument call
 ## Generators:
 
 ```python
-# Example
+# Class Example
 def f():
 	x = 1
 	yield x
@@ -75,13 +84,19 @@ def f():
 	x += 1
 	yield x
 ```
-* >>> g = f()
-  >>> g
+* >> g = f()
+  >> g
   <generator object f at 0x1234567>
-  >>> next(g)
+  >> next(g)
   1
-  >>> next(g)
+  >> next(g)
   2
-* Generator is an iterator 
+* Generator is an iterator, that allows to break the execution:
+* When **yield** is reached, a snapshot/moment of the active data frame is taken and stored (together with the line numer/position of where the execution can resume later).
+	* Yield returns one value at a time and pauses the function.
+ 	* Using yield, the generator function pauses its execution and keep its state/value between iterations.
+* When **next** is called
+* Main stack runtime: 5 variables * 2 frames = 10 variables/spaces
+* More space efficient 
 
 
