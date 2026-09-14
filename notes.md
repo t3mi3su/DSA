@@ -14,7 +14,7 @@ For loop: ```for **var** in **iterable-collection:**```
   
 ### List iterator:
   ```next(lst_iter)```
-- more explanation needed   
+- Continued
 ### String iterator:
   ```next(str_iter)```
 
@@ -56,8 +56,32 @@ def my_range(start, stop, step): # three argument call
     curr += step
   return res
 ```
-### Implementation notes:
-- The implementation returns a valid 
-- Time concern: a lot of time spent to run my_range(0, 10, 2) before running iter(my_range(0, 10, 2))
-- 
+### Implementation Drawbacks:
+- The implementation is valid but there are problems
+- Time concern: a lot of time spent to run ```my_range(0, 10, 2)``` before running ```iter(my_range(0, 10, 2))```
+- We need only a single value (we don't need the memory of all the values in the range)
+### Alternative (Better) Implementation:
+- Continued
+
+## Generators:
+
+```python
+# Example
+def f():
+	x = 1
+	yield x
+	x += 1
+	yield x
+	x += 1
+	yield x
+```
+* >>> g = f()
+  >>> g
+  <generator object f at 0x1234567>
+  >>> next(g)
+  1
+  >>> next(g)
+  2
+* Generator is an iterator 
+
 
