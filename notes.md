@@ -58,6 +58,6 @@ def my_range(start, stop, step): # three argument call
 ```
 ### Implementation notes:
 - The implementation returns a valid 
-- Time concern: a lot of time spent to run my_range(0, 10, 2) before running iter(my_ramge(0, 10, 2))
+- Time concern: a lot of time spent to run my_range(0, 10, 2) before running iter(my_range(0, 10, 2))
 - 
 
