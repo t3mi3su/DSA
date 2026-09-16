@@ -127,7 +127,8 @@ def f():
   	**d x k = num**
 - 	Ex: 4 and 25 are complementary divisors of 100.
 
-  ### Version 1
+
+### Version 1
 - 	Check the entire list: num
 - 	```python
    	def is_prime1(num):
@@ -136,12 +137,19 @@ def f():
    			if the remainder of the number divided by current_number is equal to 0:
    				add to the counter
    				return the counter
-   ## Version 2
+### Version 2
 - 	Check the first half of num: num/2
 - 	Syntax: check ```for current_number in range (1, num//2 + 1):``` and if the count = 1, then the number is a prime number.
-  ### Version 3
+
+
+### Version 3
 - 	Check until the square root of num: num^1/2
 - 	Syntax: check ```for current_number in range (1, int(math.sqrt(num) + 1):``` and if the count = 1, then the number is a prime number.
-  ### Time
-  - 
+
+## Runtime Analysis
+- We define an abstract measure for analyzing the runtime of an algorithm:
+  1. Analyze the runtime as a **function** of the **size of the input** -> find **T(n)**
+  2.
+  3.
+
 
