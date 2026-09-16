@@ -103,10 +103,14 @@ def f():
 # Asymptotic Analysis
 
 ## Computational Problem
-- definition
+- Definition:
+- 	When stating a problem:
+  	1. Define a set of legal inputs
+  	2. Define the required outputs, for each input 
 
 ## Algorithms
-- definition
+- Definition:
+- 	
 ### Analyzing Algorithms
 * **Correctness**: An algorithm is correct if for **every** valid input, it:
   	* terminates (halts)
@@ -114,5 +118,13 @@ def f():
 * **Performance**: Measure the resources an algorithm requires. Common resources:
 	* time of computation
  	* pace (memory use)
-  * disk use, disk-memory communication, number of processors (in a parallel program), amount of communication (in a distributed program) 
+  * disk use, disk-memory communication, number of processors (in a parallel program), amount of communication (in a distributed program)
+ 
+## Primality Testing
+- Definition: Let num > and = be an integer. We say that num is prime, if its only divisors are 1 and num.
+- 	Ex: 13 is a prime. 12 is not a prime.
+- Definition: Let num > and = to be an integer, and let d and k be two divisors of num --> We say that k and d are complementary divisors of num -->
+  	**d x k = num**
+- 	Ex: 4 and 25 are complementary divisors of 100.
+- 	
 
