@@ -147,13 +147,19 @@ def f():
 - 	Syntax: check ```for current_number in range (1, int(math.sqrt(num) + 1):``` and if the count = 1, then the number is a prime number.
 
 ## Runtime Analysis
-- We define an abstract measure for analyzing the runtime of an algorithm:
-  1. Analyze the runtime as a **function** of the **size of the input** -> find **T(n)**
-  2. Use the **random-access machine (RAM)** model of computation -> basically a **pseudocode** language
+We define an abstract measure for analyzing the runtime of an algorithm:
+1. Analyze the runtime as a **function** of the **size of the input** -> find **T(n)**
+2. Use the **random-access machine (RAM)** model of computation -> basically a **pseudocode** language
      - Any number occupies constant storage and can be read and/or written in constant time
      - Each primitive operation takes constant time
        (primitive operations: +, -, x, =, square root, etc.)
+3. Make **asymptotic** analysis -> **find the order of growth of T(n).**
 
-- Basically: when analyzing **runtime** of an algorithm: find **the number of primitive operations** that the algorithms performs, as **a function of its input size.**
+- Basically: when analyzing **runtime** of an algorithm: find **the asymptotic number of primitive operations** that the algorithms performs, as **a function of its input size.**
+- Example: calculating runtime of Version 1, Version 2, Version 3:
+  	- T1(n) = 1 + 2 + (5 + 5 + ... + 5 -> n times) + 2 = 5n + 5
+  	- T2(n) = 1 + 3 + (5 + 5 + ... + 5 -> n/2 times) + 2 = 5(n/2) + 6
+  	- T3(n) = 1 + 4 + (5 + 5 + ... + 5 -> sqrt(n) times) + 2 = 5(sqrt(n)) + 7
+
 
 
