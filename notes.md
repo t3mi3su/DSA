@@ -110,7 +110,7 @@ def f():
 
 ## Algorithms
 - Definition:
-- 	
+- 	continued
 ### Analyzing Algorithms
 * **Correctness**: An algorithm is correct if for **every** valid input, it:
   	* terminates (halts)
@@ -123,7 +123,7 @@ def f():
 ## Primality Testing
 - Definition: Let num > and = be an integer. We say that num is prime, if its only divisors are 1 and num.
 - 	Ex: 13 is a prime. 12 is not a prime.
-- Definition: Let num > and = to be an integer, and let d and k be two divisors of num --> We say that k and d are complementary divisors of num -->
+- Definition: Let num > and = to be an integer, and let d and k be two divisors of num -> We say that k and d are complementary divisors of num -->
   	**d x k = num**
 - 	Ex: 4 and 25 are complementary divisors of 100.
 
@@ -149,7 +149,11 @@ def f():
 ## Runtime Analysis
 - We define an abstract measure for analyzing the runtime of an algorithm:
   1. Analyze the runtime as a **function** of the **size of the input** -> find **T(n)**
-  2.
-  3.
+  2. Use the **random-access machine (RAM)** model of computation -> basically a **pseudocode** language
+     - Any number occupies constant storage and can be read and/or written in constant time
+     - Each primitive operation takes constant time
+       (primitive operations: +, -, x, =, square root, etc.)
+
+- Basically: when analyzing **runtime** of an algorithm: find **the number of primitive operations** that the algorithms performs, as **a function of its input size.**
 
 
