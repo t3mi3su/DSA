@@ -126,5 +126,22 @@ def f():
 - Definition: Let num > and = to be an integer, and let d and k be two divisors of num --> We say that k and d are complementary divisors of num -->
   	**d x k = num**
 - 	Ex: 4 and 25 are complementary divisors of 100.
+
+- 	### Version 1
+- 	Check the entire list: num
+- 	```python
+   	def is_prime1(num):
+   		initialize a counter to zero
+   		for current_number in range from 1 to num + 1:
+   			if the remainder of the number divided by current_number is equal to 0:
+   				add to the counter
+   				return the counter
+- 	### Version 2
+- 	Check the first half of num: num/2
+- 	Syntax: check ```for current_number in range (1, num//2 + 1):``` and if the count = 1, then the number is a prime number.
 - 	
+- 	### Version 3
+- 	Check until the square root of num: num^1/2
+- 	Syntax: check ```for current_number in range (1, int(math.sqrt(num) + 1):``` and if the count = 1, then the number is a prime number.
+- 	### Time
 
