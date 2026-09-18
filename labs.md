@@ -22,7 +22,7 @@
 -   other_other_list = [1,[2,2], ["python"]]
 -   Shallow_copy = copy.copy(other_other_list) -> will point to the values of the original list array
 -   Other methods (these will also create a shallow copy): list comprehension, list multiplication, list slicing, copy.copy
--   ex. [0]*3 (fix)
+-   ex.  [[0] * 3] * 3
 
 ## Deep copies
 - Create new copies of every object within each original list
