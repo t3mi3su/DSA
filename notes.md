@@ -155,11 +155,48 @@ We define an abstract measure for analyzing the runtime of an algorithm:
        (primitive operations: +, -, x, =, square root, etc.)
 3. Make **asymptotic** analysis -> **find the order of growth of T(n).**
 
-- Basically: when analyzing **runtime** of an algorithm: find **the asymptotic number of primitive operations** that the algorithms performs, as **a function of its input size.**
+- Definition (informal): when analyzing **runtime** of an algorithm: find **the asymptotic number of primitive operations** that the algorithms performs, as **a function of its input size.** -> We want to describe how the number of basic steps an algorithm performs grows as the input gets larger.
 - Example: calculating runtime of Version 1, Version 2, Version 3:
   	- T1(n) = 1 + 2 + (5 + 5 + ... + 5 -> n times) + 2 = 5n + 5
   	- T2(n) = 1 + 3 + (5 + 5 + ... + 5 -> n/2 times) + 2 = 5(n/2) + 6
   	- T3(n) = 1 + 4 + (5 + 5 + ... + 5 -> sqrt(n) times) + 2 = 5(sqrt(n)) + 7
+  
+## Asymptotic Notation: Big O, Big Omega, Big Theta
+### Big O
+- f = O(g)
+- Intuitive: f "less than or equal to" g - g is the upper bound of f -> Comparison of functions
+- O definition:
+- 	Let f(n) and g(n) be two functions mapping positive integers to positive real numbers. We say that f(n) = O(g(n)) if there exist positive real constant c and a positive integer constant n0 such that f(n) <= c * g(n) for all n >= n0.
+  
+- It defines an upper bound on order of growth of time taken by an algorithm or code with input size. Mathematically, if f(n) describes the running time of an algorithm; f(n) is O(g(n)) if there exist positive constant C and n0 such that,
 
+	0 <= f(n) <= Cg(n) for all n >= n0
 
+	n = used to give upper bound a function. 
+	If a function is O(n), it is automatically O(n-square) as well. 
+	<img width="800" height="600" alt="0_cyqWw3UxODl-wqJi" src="https://github.com/user-attachments/assets/8f2d3961-174e-40db-a26d-1b9d59ab053c" />
+
+### Big Omega
+- It defines a lower bound on order of growth of time taken by an algorithm or code with input size. Let f(n) define running time of an algorithm;
+f(n) is said to be Ω(g (n)) if there exists positive constant C and (n0) such that 
+	0 <= Cg(n) <= f(n) for all n >= n0
+
+	n = used to given lower bound on a function 
+	If a function is Ω(n-square) it is automatically Ω(n) as well.
+	<img width="800" height="401" alt="big-omega-image" src="https://github.com/user-attachments/assets/69b568ca-a86c-4497-ac0b-2f17f75355b8" />
+### Big Theta
+- It defines exact order of growth of time taken by an algorithm or code with input size. Let f(n) define running time of an algorithm. f(n) is said to be Θ(g(n)) if f(n) is O(g(n)) and f(n) is Ω(g(n)).
+
+	Mathematically, 
+
+	0 <= f(n) <= C1g(n) for n >= n0
+	0 <= C2g(n) <= f(n) for n >= n0
+
+	Merging both the equation, we get :  
+
+	0 <= C2g(n) <= f(n) <= C1g(n) for n >= n0
+
+	The equation simply means there exist positive constants C1 and C2 such that f(n) is sandwich between C2 g(n) and C1g(n).
+	<img width="663" height="476" alt="36955" src="https://github.com/user-attachments/assets/d67b5eb2-a23e-47cd-bb43-f83dbded718e" />
+ 
 
