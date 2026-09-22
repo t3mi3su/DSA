@@ -162,9 +162,10 @@ We define an abstract measure for analyzing the runtime of an algorithm:
   	- T3(n) = 1 + 4 + (5 + 5 + ... + 5 -> sqrt(n) times) + 2 = 5(sqrt(n)) + 7
   
 ## Asymptotic Notation: Big O, Big Omega, Big Theta
+
 ### Big O
 - f = O(g)
-- Intuitive: f "less than or equal to" g - g is the upper bound of f -> Comparison of functions
+- f "<=" g - g is the upper bound of f -> Comparison of functions
 - O definition:
 - 	Let f(n) and g(n) be two functions mapping positive integers to positive real numbers. We say that f(n) = O(g(n)) if there exist positive real constant c and a positive integer constant n0 such that f(n) <= c * g(n) for all n >= n0.
   
@@ -177,6 +178,7 @@ We define an abstract measure for analyzing the runtime of an algorithm:
 	<img width="800" height="600" alt="0_cyqWw3UxODl-wqJi" src="https://github.com/user-attachments/assets/8f2d3961-174e-40db-a26d-1b9d59ab053c" />
 
 ### Big Omega
+- f ">=" g
 - It defines a lower bound on order of growth of time taken by an algorithm or code with input size. Let f(n) define running time of an algorithm;
 f(n) is said to be Ω(g (n)) if there exists positive constant C and (n0) such that 
 	0 <= Cg(n) <= f(n) for all n >= n0
@@ -184,19 +186,19 @@ f(n) is said to be Ω(g (n)) if there exists positive constant C and (n0) such t
 	n = used to given lower bound on a function 
 	If a function is Ω(n-square) it is automatically Ω(n) as well.
 	<img width="800" height="401" alt="big-omega-image" src="https://github.com/user-attachments/assets/69b568ca-a86c-4497-ac0b-2f17f75355b8" />
+	
 ### Big Theta
+- f "=" g
 - It defines exact order of growth of time taken by an algorithm or code with input size. Let f(n) define running time of an algorithm. f(n) is said to be Θ(g(n)) if f(n) is O(g(n)) and f(n) is Ω(g(n)).
 
 	Mathematically, 
-
 	0 <= f(n) <= C1g(n) for n >= n0
 	0 <= C2g(n) <= f(n) for n >= n0
 
 	Merging both the equation, we get :  
-
 	0 <= C2g(n) <= f(n) <= C1g(n) for n >= n0
 
 	The equation simply means there exist positive constants C1 and C2 such that f(n) is sandwich between C2 g(n) and C1g(n).
-	<img width="663" height="476" alt="36955" src="https://github.com/user-attachments/assets/d67b5eb2-a23e-47cd-bb43-f83dbded718e" />
+	<img width="300" height="229" alt="Untitled-300x229" src="https://github.com/user-attachments/assets/de8f7522-1e46-43ae-9911-a786eef4761b" />
  
 
