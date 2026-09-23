@@ -200,5 +200,7 @@ f(n) is said to be Ω(g (n)) if there exists positive constant C and (n0) such t
 
 	The equation simply means there exist positive constants C1 and C2 such that f(n) is sandwich between C2 g(n) and C1g(n).
 	<img width="300" height="229" alt="Untitled-300x229" src="https://github.com/user-attachments/assets/de8f7522-1e46-43ae-9911-a786eef4761b" />
+
+	
  
 
